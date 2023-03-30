@@ -49,10 +49,8 @@ const computerAI = (array) => {
 
 const game = () => {
     let scores = [0,0]
-    for (let i = 0; i < 5; i++) {
-        scores = computerAI(scores)
+    scores = computerAI(scores)
 
-    }
     let [player, computer] = scores
     console.log(scores)
     if (player > computer) return console.log("you're the final winner!")
